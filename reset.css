@@ -3,6 +3,7 @@
   box-sizing: border-box;
 }
 #canvas{
-  height: 100vh;
-  border: 1px red solid;
+  display: block;
+  /* height: 100vh; */
+  /* border: 1px red solid; */
 }
