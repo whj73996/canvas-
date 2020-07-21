@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    .dot{
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: black;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <div id="canvas" >
+
+    <div class="dot"></div>
+  </div>
+  
+  <script>
+    
+    canvas.onmousemove = (e)=>{
+      // console.log(e);
+      let div =document.createElement('div');
+      div.className = 'dot';
+      div.style.left = e.clientX-5+ "px";
+      div.style.top = e.clientY-5 + "px";
+      canvas.appendChild(div)
+    }
+
+  </script>
+</body>
+</html>
